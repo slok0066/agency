@@ -52,6 +52,18 @@ const ServicesPage = () => {
         })}
       </Script>
       <div className="bg-white dark:bg-black">
+        <section className="prose prose-lg dark:prose-invert mx-auto text-center my-12">
+          <h1>Our Services: End-to-End Digital Solutions</h1>
+          <p><strong>ThinkBuild</strong> offers a full spectrum of digital services for ambitious brands and enterprises worldwide:</p>
+          <ul>
+            <li><strong>Custom Software Development:</strong> Tailored solutions for your unique business needs.</li>
+            <li><strong>Web Development:</strong> Fast, secure, and scalable websites using Next.js and React.</li>
+            <li><strong>Mobile App Development:</strong> Engaging iOS and Android apps for startups and enterprises.</li>
+            <li><strong>UI/UX Design:</strong> Award-winning user experiences that delight and convert.</li>
+            <li><strong>Digital Transformation Consulting:</strong> Strategy, cloud, and automation for future-ready businesses.</li>
+          </ul>
+          <p>Partner with ThinkBuild for proven results, advanced SEO, and digital growth. <strong>Your success is our mission.</strong></p>
+        </section>
         <ServicesSection />
       </div>
     </>

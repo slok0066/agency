@@ -46,6 +46,11 @@ const AboutPage = () => {
           url: 'https://thinkbuild.tech/about',
         })}
       </Script>
+      <div className="prose prose-lg dark:prose-invert mx-auto text-center my-12">
+        <h1>About ThinkBuild: Our Mission, Story & Innovation</h1>
+        <p>At <strong>ThinkBuild</strong>, we’re passionate about building world-class digital solutions that drive real business results. Founded in India and serving clients globally, our team blends cutting-edge technology, creative design, and deep business insight to deliver custom software, web, and mobile apps that fuel growth and innovation.</p>
+        <p>Our mission is simple: empower ambitious brands to lead in the digital era. We believe in transparent collaboration, measurable outcomes, and relentless pursuit of excellence. Discover why top startups and enterprises trust ThinkBuild to turn their ideas into reality.</p>
+      </div>
       <AboutPageClient />
     </>
   );

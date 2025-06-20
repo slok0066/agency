@@ -47,6 +47,10 @@ const ContactPage = () => {
         })}
       </Script>
       <div className="bg-gray-50 dark:bg-gray-900">
+        <section className="prose prose-lg dark:prose-invert mx-auto text-center my-12">
+          <h1>Contact ThinkBuild: Start Your Project Today</h1>
+          <p>Ready to build something amazing? Reach out to <strong>ThinkBuild</strong> for a free consultation on custom software, web, or mobile app development. Our experts respond within 24 hours. Let’s unlock your business potential together.</p>
+        </section>
         <ContactSection />
       </div>
     </>

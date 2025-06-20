@@ -41,8 +41,8 @@ const CareersPage = () => {
   return (
     <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50 via-cyan-50 to-white dark:from-slate-900 dark:via-emerald-900/10 dark:to-slate-900 min-h-screen">
       <div className="max-w-5xl mx-auto text-center mb-16 animate-fade-in">
-        <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-4">Join Our Team</h1>
-        <p className="text-lg sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">We’re on a mission to build world-class digital products. If you’re passionate about tech, creativity, and impact—let’s build the future together.</p>
+        <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-4">Careers at ThinkBuild: Join Our Digital Innovation Team</h1>
+        <p className="text-lg sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">Join <strong>ThinkBuild</strong> and help shape the future of technology. We’re always looking for talented developers, designers, and strategists who are passionate about digital excellence. Enjoy remote flexibility, growth opportunities, and a supportive team culture. Explore open positions and grow your career with ThinkBuild.</p>
         <a href="/contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
           Apply Now <Send className="w-5 h-5" />
         </a>
