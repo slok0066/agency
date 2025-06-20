@@ -1,103 +1,174 @@
-import Image from "next/image";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
+import type { Metadata } from "next";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: 'ThinkBuild - #1 Custom Software Development, Web & Mobile Apps | ThinkBuild.tech',
+  description: 'Rank #1 with ThinkBuild: Award-winning custom software development, web & mobile app experts. Proven results, advanced SEO, modern UI/UX, and digital growth for ambitious brands.',
+  keywords: [
+    'custom software development', 'web development', 'mobile app development', 'enterprise solutions', 'UI/UX design', 'digital transformation', 'SEO', 'Next.js', 'React', 'India', 'USA', 'agency', 'award-winning', 'digital growth', 'startup', 'SaaS', 'ecommerce', 'cloud', 'AI', 'ML', 'consulting', 'ThinkBuild', 'thinkbuild.tech'
+  ],
+  openGraph: {
+    title: 'ThinkBuild - #1 Custom Software Development, Web & Mobile Apps | ThinkBuild.tech',
+    description: 'Rank #1 with ThinkBuild: Award-winning custom software development, web & mobile app experts. Proven results, advanced SEO, modern UI/UX, and digital growth for ambitious brands.',
+    url: 'https://thinkbuild.tech/',
+    siteName: 'ThinkBuild',
+    images: [
+      {
+        url: 'https://thinkbuild.tech/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'ThinkBuild - Digital Solutions',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ThinkBuild - #1 Custom Software Development, Web & Mobile Apps | ThinkBuild.tech',
+    description: 'Rank #1 with ThinkBuild: Award-winning custom software development, web & mobile app experts.',
+    images: ['/images/og-image.png'],
+    creator: '@thinkbuild',
+    site: '@thinkbuild',
+  },
+  alternates: {
+    canonical: 'https://thinkbuild.tech/',
+    languages: {
+      'en': 'https://thinkbuild.tech/',
+      'hi': 'https://thinkbuild.tech/hi',
+      'es': 'https://thinkbuild.tech/es',
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      maxSnippet: -1,
+      maxImagePreview: 'large',
+      maxVideoPreview: -1,
+    },
+  },
+};
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <main className="relative bg-gradient-to-br from-emerald-50 via-cyan-50 to-white dark:from-slate-900 dark:via-emerald-900/10 dark:to-slate-900 min-h-screen">
+      {/* Advanced SEO Meta Tags */}
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="author" content="ThinkBuild" />
+      <meta name="copyright" content="ThinkBuild.tech" />
+      <meta name="publisher" content="ThinkBuild.tech" />
+      <meta httpEquiv="content-language" content="en" />
+      <meta name="revisit-after" content="7 days" />
+      <meta name="rating" content="general" />
+      <meta name="distribution" content="global" />
+      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <link rel="canonical" href="https://thinkbuild.tech/" />
+      <link rel="alternate" href="https://thinkbuild.tech/" hrefLang="en" />
+      <link rel="alternate" href="https://thinkbuild.tech/hi" hrefLang="hi" />
+      <link rel="alternate" href="https://thinkbuild.tech/es" hrefLang="es" />
+      {/* JSON-LD Structured Data */}
+      <Script id="ld-json-org" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'ThinkBuild',
+          url: 'https://thinkbuild.tech/',
+          logo: 'https://thinkbuild.tech/images/logo.png',
+          sameAs: [
+            'https://instagram.com/thinkbuild.tech'
+          ],
+          description: 'Award-winning custom software, web, and mobile app development agency. Proven results and advanced SEO for ambitious brands.'
+        })}
+      </Script>
+      <Script id="ld-json-website" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'ThinkBuild',
+          url: 'https://thinkbuild.tech/',
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: 'https://thinkbuild.tech/search?q={search_term_string}',
+            'query-input': 'required name=search_term_string',
+          },
+        })}
+      </Script>
+      <Script id="ld-json-breadcrumb" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thinkbuild.tech/' },
+            { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://thinkbuild.tech/#services' },
+            { '@type': 'ListItem', position: 3, name: 'Contact', item: 'https://thinkbuild.tech/#contact' },
+          ],
+        })}
+      </Script>
+      <Script id="ld-json-service" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          serviceType: 'Custom Software Development',
+          provider: {
+            '@type': 'Organization',
+            name: 'ThinkBuild',
+            url: 'https://thinkbuild.tech/'
+          },
+          areaServed: ['IN', 'US', 'GB', 'AU'],
+          description: 'Award-winning custom software, web, and mobile app development agency. Proven results and advanced SEO for ambitious brands.'
+        })}
+      </Script>
+      <Script id="ld-json-faq" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'What services does ThinkBuild offer?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'ThinkBuild offers custom software development, web and mobile app development, UI/UX design, and digital transformation consulting.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Where is ThinkBuild located?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'ThinkBuild is based in India and serves clients globally, including the US, UK, and Australia.'
+              }
+            },
+            {
+              '@type': 'Question',
+              name: 'Why choose ThinkBuild for your project?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'ThinkBuild is an award-winning agency with a proven track record, advanced SEO expertise, and a focus on delivering measurable business results.'
+              }
+            }
+          ]
+        })}
+      </Script>
+      <Hero />
+      <div className="h-12 w-full bg-gradient-to-b from-transparent to-emerald-50 dark:to-slate-900" />
+      <About />
+      <div className="h-12 w-full bg-gradient-to-b from-emerald-50 to-cyan-50 dark:from-slate-900 dark:to-emerald-900/10" />
+      <Services />
+      <div className="h-12 w-full bg-gradient-to-b from-cyan-50 to-white dark:from-emerald-900/10 dark:to-slate-900" />
+      <Testimonials />
+      <div className="h-12 w-full bg-gradient-to-b from-white to-emerald-50 dark:from-slate-900 dark:to-emerald-900/10" />
+      <Contact />
+    </main>
   );
 }
