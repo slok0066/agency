@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://thinkbuild.tech'),
   title: {
     template: '%s | ThinkBuild',
     default: 'ThinkBuild - Custom Software Development & Digital Solutions',
