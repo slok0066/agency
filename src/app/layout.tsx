@@ -6,6 +6,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CalendlyBadge from "@/components/CalendlyBadge";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -89,6 +90,7 @@ export default function RootLayout({
         </footer>
         <CalendlyBadge />
         <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+        <Analytics />
       </body>
     </html>
   );
