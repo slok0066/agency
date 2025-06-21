@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="relative bg-gradient-to-br from-emerald-50 via-cyan-50 to-white dark:from-slate-900 dark:via-emerald-900/10 dark:to-slate-900 min-h-screen">
+    <main className="relative bg-gradient-to-br from-emerald-50 via-cyan-50 to-white    min-h-screen">
       {/* Advanced SEO Meta Tags */}
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="author" content="ThinkBuild" />
@@ -161,13 +161,13 @@ export default function Home() {
         })}
       </Script>
       <Hero />
-      <div className="h-12 w-full bg-gradient-to-b from-transparent to-emerald-50 dark:to-slate-900" />
+      <div className="h-12 w-full bg-gradient-to-b from-transparent to-emerald-50 " />
       <About />
-      <div className="h-12 w-full bg-gradient-to-b from-emerald-50 to-cyan-50 dark:from-slate-900 dark:to-emerald-900/10" />
+      <div className="h-12 w-full bg-gradient-to-b from-emerald-50 to-cyan-50  dark:to-emerald-900/10" />
       <Services />
-      <div className="h-12 w-full bg-gradient-to-b from-cyan-50 to-white dark:from-emerald-900/10 dark:to-slate-900" />
+      <div className="h-12 w-full bg-gradient-to-b from-cyan-50 to-white dark:from-emerald-900/10 " />
       <Testimonials />
-      <div className="h-12 w-full bg-gradient-to-b from-white to-emerald-50 dark:from-slate-900 dark:to-emerald-900/10" />
+      <div className="h-12 w-full bg-gradient-to-b from-white to-emerald-50  dark:to-emerald-900/10" />
       <Contact />
     </main>
   );

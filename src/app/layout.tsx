@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CalendlyBadge from "@/components/CalendlyBadge";
 
-const geistSans = Geist({
+const inter = Inter({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -48,24 +43,17 @@ export default function RootLayout({
         <meta name="twitter:image" content="/images/og-image.png" />
         <link rel="canonical" href="https://thinkbuild.tech/" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <header>
-            <Navigation />
-          </header>
-          <main id="main-content" tabIndex={-1}>
-            {children}
-          </main>
-          <footer>
-            <Footer />
-          </footer>
-          <CalendlyBadge />
-        </ThemeProvider>
+      <body className={`${inter.variable} antialiased`}>
+        <header>
+          <Navigation />
+        </header>
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+        <CalendlyBadge />
         <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
       </body>
     </html>

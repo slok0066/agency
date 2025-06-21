@@ -78,10 +78,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 sm:mb-20 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900  mb-6">
             What Our <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">Clients Say</span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-4">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600  max-w-3xl mx-auto px-4">
             Don't just take our word for it. Here's what our satisfied clients have to say about our work.
           </p>
         </div>
@@ -139,7 +139,7 @@ const Testimonials = () => {
                           </div>
 
                           {/* Testimonial Content */}
-                          <blockquote className="text-gray-700 dark:text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors duration-300 animate-fade-in">
+                          <blockquote className="text-gray-700  text-sm sm:text-base lg:text-lg leading-relaxed mb-6 group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors duration-300 animate-fade-in">
                             "{testimonial.content}"
                           </blockquote>
 

@@ -69,12 +69,12 @@ const Navigation = () => {
               >
                 <Link
                   href={link.href}
-                  className="group text-gray-700 dark:text-gray-300 font-medium relative focus:outline-none"
+                  className="group text-gray-700  font-medium relative focus:outline-none"
                 >
                   <motion.span
                     whileHover={{ scale: 1.13, color: "#059669" }}
                     transition={{ type: "spring", stiffness: 350, damping: 15 }}
-                    className="inline-block px-2 py-1 transition-colors duration-300 hover:text-emerald-600 dark:hover:text-emerald-400"
+                    className="inline-block px-2 py-1 transition-colors duration-300 hover:text-emerald-600 "
                   >
                     {link.label}
                   </motion.span>
@@ -122,7 +122,7 @@ const Navigation = () => {
                   >
                     <Link
                       href={link.href}
-                      className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-300 font-medium"
+                      className="block px-3 py-2 text-gray-700  hover:text-emerald-600  transition-colors duration-300 font-medium"
                       onClick={() => setIsOpen(false)}
                     >
                       {link.label}

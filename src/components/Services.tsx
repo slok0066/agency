@@ -79,7 +79,7 @@ const Services = () => {
                 </ul>
                 
                 {/* Learn More Link */}
-                <div className="flex items-center text-emerald-600 dark:text-emerald-400 font-semibold group-hover:text-emerald-700 dark:group-hover:text-emerald-300 transition-colors duration-300 cursor-pointer">
+                <div className="flex items-center text-emerald-600  font-semibold group-hover:text-emerald-700  transition-colors duration-300 cursor-pointer">
                   <span className="text-sm sm:text-base">Learn More</span>
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>

@@ -6,13 +6,13 @@ import { motion } from 'framer-motion';
 
 const AboutPageClient = () => {
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-white ">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative pt-24 pb-16 text-center bg-gradient-to-b from-emerald-50/50 to-white dark:from-emerald-900/10 dark:to-gray-950"
+        className="relative pt-24 pb-16 text-center bg-gradient-to-b from-emerald-50/50 to-white  "
       >
         <div className="container mx-auto px-4">
           <motion.h1
@@ -44,7 +44,7 @@ const AboutPageClient = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white flex items-center">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900  flex items-center">
                 <Target className="w-8 h-8 mr-3 text-emerald-500" />
                 Our Mission
               </h2>
@@ -58,7 +58,7 @@ const AboutPageClient = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white flex items-center">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900  flex items-center">
                 <Heart className="w-8 h-8 mr-3 text-teal-500" />
                 Our Story
               </h2>
@@ -79,7 +79,7 @@ const AboutPageClient = () => {
         className="py-16 sm:py-24"
       >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900 ">
             Ready to Build With Us?
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">

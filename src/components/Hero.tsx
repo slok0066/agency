@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <>
       <section className="min-h-screen flex items-center justify-center px-2 sm:px-6 lg:px-8 overflow-hidden 
-        relative bg-white/95 dark:bg-slate-950/95 sm:bg-transparent sm:dark:bg-transparent">
+        relative bg-white/95  sm:bg-transparent sm:">
         <div className="w-full h-full flex flex-col justify-center items-center overflow-y-auto sm:overflow-visible">
       {/* Enhanced gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-100 dark:from-slate-900 dark:via-emerald-900/20 dark:to-slate-900" />
