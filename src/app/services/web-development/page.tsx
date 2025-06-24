@@ -12,12 +12,12 @@ import {
 export default function WebDevelopmentPage() {
   const router = useRouter();
   return (
-    <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-white py-4 px-2 sm:px-4 flex flex-col items-center w-full">
+    <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-white py-4 px-2 flex flex-col items-center w-full">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="w-full max-w-full sm:max-w-2xl md:max-w-3xl bg-white/95 dark:bg-slate-900/90 rounded-3xl shadow-2xl p-2 sm:p-4 md:p-8 border border-gray-200 dark:border-white/10 animate-fade-in"
+        className="w-full max-w-3xl bg-white/95 rounded-3xl shadow-2xl p-8 border border-gray-200 animate-fade-in"
       >
         <div className="mb-4 flex items-center">
           <button
@@ -44,7 +44,7 @@ export default function WebDevelopmentPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent"
+          className="text-5xl font-bold text-gray-900 mb-3 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent"
         >
           Custom Web Development That Converts
         </motion.h1>
@@ -52,7 +52,7 @@ export default function WebDevelopmentPage() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6"
+          className="text-lg text-gray-600 mb-6"
         >
           Go beyond templates — we build custom websites and applications using
           React, Next.js, and other modern web frameworks.
@@ -64,10 +64,10 @@ export default function WebDevelopmentPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+          <h2 className="text-2xl font-semibold text-emerald-600 mb-2">
             ✔️ Benefits of Custom Development
           </h2>
-          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-200 space-y-1 text-sm sm:text-base">
+          <ul className="list-disc pl-5 text-gray-700 space-y-1 text-base">
             <li>Tailored to your brand and goals</li>
             <li>Better performance, SEO, and scalability</li>
             <li>Stand out from competitors</li>
@@ -80,10 +80,10 @@ export default function WebDevelopmentPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+          <h2 className="text-2xl font-semibold text-emerald-600 mb-2">
             ✔️ Detailed Features
           </h2>
-          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-200 space-y-1 text-sm sm:text-base">
+          <ul className="list-disc pl-5 text-gray-700 space-y-1 text-base">
             <li>Responsive UI</li>
             <li>SEO Schema & Meta Tags</li>
             <li>Lighthouse Performance &gt;90</li>
@@ -97,10 +97,10 @@ export default function WebDevelopmentPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+          <h2 className="text-2xl font-semibold text-emerald-600 mb-2">
             Our Process
           </h2>
-          <ol className="list-decimal pl-5 text-gray-700 dark:text-gray-200 space-y-1 text-sm sm:text-base">
+          <ol className="list-decimal pl-5 text-gray-700 space-y-1 text-base">
             <li>
               <b>Discovery:</b> We learn about your goals, audience, and
               requirements.
@@ -127,7 +127,7 @@ export default function WebDevelopmentPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+          <h2 className="text-2xl font-semibold text-emerald-600 mb-2">
             Frequently Asked Questions
           </h2>
           <div className="max-w-2xl mx-auto">
@@ -170,7 +170,7 @@ export default function WebDevelopmentPage() {
             href="https://koalendar.com/e/meet-with-thinkbuild"
             data-koalendar-widget
             data-koa-type="link"
-            className="inline-flex items-center gap-2 px-7 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-base sm:text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+            className="inline-flex items-center gap-2 px-7 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
           >
             Book a Free Consultation
             <ArrowRight className="h-5 w-5" />
