@@ -11,7 +11,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: 'export', // Enable static export for Next.js 13+ (required for next export)
 };
+
+module.exports = nextConfig;
 
 module.exports = nextConfig;
