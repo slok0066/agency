@@ -74,14 +74,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 animate-fade-in delay-1000">
             <Button 
               asChild
-              className="group w-full sm:w-auto px-8 sm:px-14 py-5 sm:py-7 text-lg sm:text-2xl font-extrabold rounded-2xl shadow-xl border-2 border-transparent bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-400 focus-visible:ring-4 focus-visible:ring-emerald-300/60 transition-all duration-200 relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:rounded-2xl before:bg-white/10 before:opacity-0 group-hover:before:opacity-10 before:pointer-events-none active:scale-97 animate-glow"
-              style={{ letterSpacing: '0.03em', boxShadow: '0 4px 24px 0 rgba(16, 185, 129, 0.18), 0 2px 12px 0 rgba(20, 184, 166, 0.18) inset' }}
+              className="group w-full sm:w-auto px-8 sm:px-16 py-5 sm:py-7 text-2xl sm:text-3xl font-extrabold rounded-2xl shadow-emerald-200/40 shadow-xl border-2 border-transparent bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-400 focus-visible:ring-4 focus-visible:ring-emerald-300/60 transition-all duration-200 relative overflow-hidden before:content-[''] before:absolute before:inset-0 before:rounded-2xl before:bg-white/10 before:opacity-0 group-hover:before:opacity-10 before:pointer-events-none active:scale-97"
+              style={{ letterSpacing: '0.04em', boxShadow: '0 6px 32px 0 rgba(16, 185, 129, 0.18), 0 2px 12px 0 rgba(20, 184, 166, 0.18) inset' }}
             >
               <a href="https://koalendar.com/e/meet-with-thinkbuild" data-koalendar-widget data-koa-type="link">
-                <span className="relative z-10 bg-gradient-to-r from-white via-emerald-100 to-cyan-100 bg-clip-text text-transparent drop-shadow-lg group-hover:text-white transition-colors duration-200">
-                  Book Free Consultation
+                <span className="relative z-10 bg-gradient-to-r from-white via-emerald-100 to-cyan-100 bg-clip-text text-transparent drop-shadow-lg group-hover:text-white transition-colors duration-200 flex items-center gap-2">
+                  <span className="tracking-wider">Book Free Consultation</span>
+                  <ArrowRight className="ml-2 h-7 w-7 sm:h-8 sm:w-8 group-hover:translate-x-1 transition-transform duration-300 relative z-10 text-white/90 group-hover:text-white" />
                 </span>
-                <ArrowRight className="ml-3 h-6 w-6 sm:h-8 sm:w-8 group-hover:translate-x-1 transition-transform duration-300 relative z-10 text-white/80 group-hover:text-white" />
               </a>
             </Button>
             <Button asChild className="group w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-6 text-lg sm:text-xl font-extrabold rounded-xl sm:rounded-2xl shadow-md sm:shadow-xl border-2 border-transparent bg-slate-900/80 dark:bg-slate-800/80 backdrop-blur-md relative overflow-hidden focus:outline-none focus-visible:ring-4 focus-visible:ring-sky-400/60 transition-all duration-200 active:scale-95">
