@@ -1,0 +1,160 @@
+"use client";
+import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
+
+export default function WebDevelopmentPage() {
+  const router = useRouter();
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-white py-8 px-2 sm:px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="max-w-2xl sm:max-w-3xl mx-auto bg-white/95 dark:bg-slate-900/90 rounded-3xl shadow-2xl p-4 sm:p-8 md:p-14 border border-gray-200 dark:border-white/10 animate-fade-in"
+      >
+        <div className="mb-4 flex items-center">
+          <button
+            onClick={() => router.back()}
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-gradient-to-r from-gray-100 to-emerald-100 hover:from-emerald-200 hover:to-cyan-100 text-emerald-700 font-semibold shadow transition-all duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+          >
+            <svg
+              className="h-5 w-5 group-hover:-translate-x-1 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            <span className="hidden xs:inline">Back</span>
+          </button>
+        </div>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent"
+        >
+          Custom Web Development That Converts
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6"
+        >
+          Go beyond templates — we build custom websites and applications using
+          React, Next.js, and other modern web frameworks.
+        </motion.p>
+        <motion.section
+          className="mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+            ✔️ Benefits of Custom Development
+          </h2>
+          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-200 space-y-1 text-sm sm:text-base">
+            <li>Tailored to your brand and goals</li>
+            <li>Better performance, SEO, and scalability</li>
+            <li>Stand out from competitors</li>
+          </ul>
+        </motion.section>
+        <motion.section
+          className="mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+            ✔️ Showcase of Past Projects
+          </h2>
+          <div className="space-y-3">
+            <div className="bg-gradient-to-r from-emerald-100 to-cyan-100 rounded-xl p-3 sm:p-4 shadow flex flex-col sm:flex-row gap-3 items-center">
+              <img
+                src="/images/logo.png"
+                alt="Project 1"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-contain border border-emerald-200"
+                loading="lazy"
+              />
+              <div>
+                <h3 className="font-bold text-base sm:text-lg text-gray-900 dark:text-white">
+                  Modern SaaS Platform
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
+                  Increased signups by 40% after redesign.
+                </p>
+                <a
+                  href="#"
+                  className="text-emerald-600 hover:underline text-xs sm:text-sm"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+            <div className="bg-gradient-to-r from-cyan-100 to-emerald-100 rounded-xl p-3 sm:p-4 shadow flex flex-col sm:flex-row gap-3 items-center">
+              <img
+                src="/images/logo.png"
+                alt="Project 2"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-contain border border-cyan-200"
+                loading="lazy"
+              />
+              <div>
+                <h3 className="font-bold text-base sm:text-lg text-gray-900 dark:text-white">
+                  E-commerce Redesign
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
+                  Boosted conversion rate to 3.2%.
+                </p>
+                <a
+                  href="#"
+                  className="text-emerald-600 hover:underline text-xs sm:text-sm"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.section>
+        <motion.section
+          className="mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+        >
+          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+            ✔️ Detailed Features
+          </h2>
+          <ul className="list-disc pl-5 text-gray-700 dark:text-gray-200 space-y-1 text-sm sm:text-base">
+            <li>Responsive UI</li>
+            <li>SEO Schema & Meta Tags</li>
+            <li>Lighthouse Performance &gt;90</li>
+            <li>Code Splitting & SSR (if Next.js)</li>
+          </ul>
+        </motion.section>
+        <motion.div
+          className="mt-8 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <a
+            href="https://koalendar.com/e/meet-with-thinkbuild"
+            data-koalendar-widget
+            data-koa-type="link"
+            className="inline-flex items-center gap-2 px-7 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300 text-base sm:text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+          >
+            Book a Free Consultation
+            <ArrowRight className="h-5 w-5" />
+          </a>
+        </motion.div>
+      </motion.div>
+    </main>
+  );
+}
