@@ -12,12 +12,12 @@ import {
 export default function WebDevelopmentPage() {
   const router = useRouter();
   return (
-    <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-white py-8 px-2 sm:px-4">
+    <main className="min-h-screen bg-gradient-to-br from-emerald-50 via-cyan-50 to-white py-4 px-2 sm:px-4 flex flex-col items-center w-full">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        className="max-w-2xl sm:max-w-3xl mx-auto bg-white/95 dark:bg-slate-900/90 rounded-3xl shadow-2xl p-4 sm:p-8 md:p-14 border border-gray-200 dark:border-white/10 animate-fade-in"
+        className="w-full max-w-full sm:max-w-2xl md:max-w-3xl bg-white/95 dark:bg-slate-900/90 rounded-3xl shadow-2xl p-2 sm:p-4 md:p-8 border border-gray-200 dark:border-white/10 animate-fade-in"
       >
         <div className="mb-4 flex items-center">
           <button
@@ -57,6 +57,7 @@ export default function WebDevelopmentPage() {
           Go beyond templates — we build custom websites and applications using
           React, Next.js, and other modern web frameworks.
         </motion.p>
+        {/* Benefits Section */}
         <motion.section
           className="mb-6"
           initial={{ opacity: 0, y: 20 }}
@@ -72,6 +73,7 @@ export default function WebDevelopmentPage() {
             <li>Stand out from competitors</li>
           </ul>
         </motion.section>
+        {/* Features Section */}
         <motion.section
           className="mb-6"
           initial={{ opacity: 0, y: 20 }}
@@ -88,6 +90,7 @@ export default function WebDevelopmentPage() {
             <li>Code Splitting & SSR (if Next.js)</li>
           </ul>
         </motion.section>
+        {/* Process Section */}
         <motion.section
           className="mb-6"
           initial={{ opacity: 0, y: 10 }}
@@ -117,6 +120,7 @@ export default function WebDevelopmentPage() {
             </li>
           </ol>
         </motion.section>
+        {/* FAQ Section */}
         <motion.section
           className="mb-6"
           initial={{ opacity: 0, y: 10 }}
@@ -155,6 +159,7 @@ export default function WebDevelopmentPage() {
             </Accordion>
           </div>
         </motion.section>
+        {/* CTA Section */}
         <motion.div
           className="mt-8 text-center"
           initial={{ opacity: 0, y: 20 }}
