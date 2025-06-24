@@ -2,6 +2,12 @@
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function WebDevelopmentPage() {
   const router = useRouter();
@@ -70,62 +76,6 @@ export default function WebDevelopmentPage() {
           className="mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-        >
-          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
-            ✔️ Showcase of Past Projects
-          </h2>
-          <div className="space-y-3">
-            <div className="bg-gradient-to-r from-emerald-100 to-cyan-100 rounded-xl p-3 sm:p-4 shadow flex flex-col sm:flex-row gap-3 items-center">
-              <img
-                src="/images/logo.png"
-                alt="Project 1"
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-contain border border-emerald-200"
-                loading="lazy"
-              />
-              <div>
-                <h3 className="font-bold text-base sm:text-lg text-gray-900 dark:text-white">
-                  Modern SaaS Platform
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
-                  Increased signups by 40% after redesign.
-                </p>
-                <a
-                  href="#"
-                  className="text-emerald-600 hover:underline text-xs sm:text-sm"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-            <div className="bg-gradient-to-r from-cyan-100 to-emerald-100 rounded-xl p-3 sm:p-4 shadow flex flex-col sm:flex-row gap-3 items-center">
-              <img
-                src="/images/logo.png"
-                alt="Project 2"
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-contain border border-cyan-200"
-                loading="lazy"
-              />
-              <div>
-                <h3 className="font-bold text-base sm:text-lg text-gray-900 dark:text-white">
-                  E-commerce Redesign
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-sm">
-                  Boosted conversion rate to 3.2%.
-                </p>
-                <a
-                  href="#"
-                  className="text-emerald-600 hover:underline text-xs sm:text-sm"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-          </div>
-        </motion.section>
-        <motion.section
-          className="mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
           <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
@@ -137,6 +87,73 @@ export default function WebDevelopmentPage() {
             <li>Lighthouse Performance &gt;90</li>
             <li>Code Splitting & SSR (if Next.js)</li>
           </ul>
+        </motion.section>
+        <motion.section
+          className="mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+            Our Process
+          </h2>
+          <ol className="list-decimal pl-5 text-gray-700 dark:text-gray-200 space-y-1 text-sm sm:text-base">
+            <li>
+              <b>Discovery:</b> We learn about your goals, audience, and
+              requirements.
+            </li>
+            <li>
+              <b>Design:</b> Wireframes and UI/UX mockups are created for your
+              review.
+            </li>
+            <li>
+              <b>Development:</b> We build your site/app using modern frameworks.
+            </li>
+            <li>
+              <b>Launch:</b> Your project goes live, fully tested and optimized.
+            </li>
+            <li>
+              <b>Support:</b> Ongoing maintenance and improvements as needed.
+            </li>
+          </ol>
+        </motion.section>
+        <motion.section
+          className="mb-6"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <h2 className="text-xl sm:text-2xl font-semibold text-emerald-600 mb-2">
+            Frequently Asked Questions
+          </h2>
+          <div className="max-w-2xl mx-auto">
+            <Accordion type="single" collapsible>
+              <AccordionItem value="q1">
+                <AccordionTrigger>
+                  How long does a typical project take?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Most projects take 3-8 weeks depending on complexity and
+                  requirements.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="q2">
+                <AccordionTrigger>What technologies do you use?</AccordionTrigger>
+                <AccordionContent>
+                  We use React, Next.js, Tailwind CSS, and other modern web tools.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="q3">
+                <AccordionTrigger>
+                  How much does a custom website cost?
+                </AccordionTrigger>
+                <AccordionContent>
+                  Pricing depends on features and scope. Contact us for a tailored
+                  quote.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
         </motion.section>
         <motion.div
           className="mt-8 text-center"

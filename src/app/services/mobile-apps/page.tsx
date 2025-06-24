@@ -71,26 +71,6 @@ export default function MobileAppsPage() {
           className="mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-        >
-          <h2 className="text-xl sm:text-2xl font-semibold text-teal-600 mb-2">
-            📱 UI/UX Demo
-          </h2>
-          <div className="flex flex-col md:flex-row gap-4 items-center">
-            <img
-              src="/images/logo.png"
-              alt="App Demo"
-              className="w-20 h-20 rounded-lg object-contain border border-teal-200"
-            />
-            <span className="text-gray-600 dark:text-gray-300 text-sm">
-              App demo screenshot or mockup here
-            </span>
-          </div>
-        </motion.section>
-        <motion.section
-          className="mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
           <h2 className="text-xl sm:text-2xl font-semibold text-teal-600 mb-2">
@@ -116,26 +96,6 @@ export default function MobileAppsPage() {
             <li>Offline Support</li>
             <li>App Store Optimization</li>
           </ul>
-        </motion.section>
-        <motion.section
-          className="mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-        >
-          <h2 className="text-xl sm:text-2xl font-semibold text-teal-600 mb-2">
-            💼 Case Study
-          </h2>
-          <div className="flex flex-col md:flex-row gap-4 items-center">
-            <img
-              src="/images/logo.png"
-              alt="Case Study"
-              className="w-20 h-20 rounded-lg object-contain border border-cyan-200"
-            />
-            <span className="text-gray-600 dark:text-gray-300 text-sm">
-              Demo link or case study here
-            </span>
-          </div>
         </motion.section>
         <motion.div
           className="mt-8 text-center"

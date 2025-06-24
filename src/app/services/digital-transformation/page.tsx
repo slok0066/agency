@@ -82,20 +82,6 @@ export default function DigitalTransformationPage() {
           className="mb-6"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <h2 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
-            📊 Example of a transformation: Before vs After
-          </h2>
-          <div className="flex flex-col md:flex-row gap-4 items-center">
-            <img src="/images/logo.png" alt="Transformation Example" className="w-20 h-20 rounded-lg object-contain border border-emerald-200" />
-            <span className="text-gray-600 dark:text-gray-300 text-sm">Before vs After transformation example here</span>
-          </div>
-        </motion.section>
-        <motion.section
-          className="mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
           <h2 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">

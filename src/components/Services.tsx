@@ -58,10 +58,8 @@ const Services = () => {
       description: "Whether it's React Native or native development, we build intuitive mobile apps with powerful performance and minimal bugs.",
       sections: [
         { heading: "Platforms We Support", content: "Android, iOS, Cross-platform" },
-        { heading: "UI/UX Demo", content: "[App Demo Screenshot](#)" },
         { heading: "Technologies", content: "React Native, Kotlin, Swift" },
         { heading: "Features", content: "- Push Notifications\n- Offline Support\n- App Store Optimization" },
-        { heading: "Case Study", content: "[Demo Link](#)" },
       ],
       cta: { label: "Schedule a Demo", url: "https://koalendar.com/e/meet-with-thinkbuild" },
     },
@@ -72,7 +70,6 @@ const Services = () => {
         { heading: "What is Custom Software?", content: "Custom vs off-the-shelf solutions" },
         { heading: "Features We Offer", content: "- Backend/API Development (Node.js, Django, etc.)\n- Secure Database Design (MongoDB, PostgreSQL)\n- Admin Panels & Dashboards\n- SaaS product examples" },
         { heading: "Hosting & Maintenance", content: "AWS, Vercel, Firebase, etc." },
-        { heading: "Real Examples", content: "[Use Case Scenario](#)" },
       ],
       cta: { label: "Let's Talk About Your Project", url: "https://koalendar.com/e/meet-with-thinkbuild" },
     },
@@ -82,8 +79,6 @@ const Services = () => {
       sections: [
         { heading: "What is Digital Transformation?", content: "Overview and benefits" },
         { heading: "Services", content: "- Workflow Automation (Zapier, n8n)\n- Cloud Migration (AWS, GCP)\n- System Integration (CRM, ERP)\n- Data Dashboards & Insights" },
-        { heading: "Example Transformation", content: "Before vs After" },
-        { heading: "Benefits", content: "- Reduced manual effort\n- Cost & time savings\n- Real-time data access" },
       ],
       cta: { label: "Request a Digital Audit", url: "https://koalendar.com/e/meet-with-thinkbuild" },
     },
