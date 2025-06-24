@@ -59,6 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="color-scheme" content="only light" />
         {/* Metadata is now handled by the metadata object above */}
         <script
           type="application/ld+json"
